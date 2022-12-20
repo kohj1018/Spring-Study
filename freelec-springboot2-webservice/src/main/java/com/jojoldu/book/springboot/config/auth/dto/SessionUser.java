@@ -1,6 +1,6 @@
 package com.jojoldu.book.springboot.config.auth.dto;
 
-import com.jojoldu.book.springboot.domain.user.User;
+import com.jojoldu.book.springboot.domain.user.Users;
 import lombok.Getter;
 
 @Getter
@@ -9,9 +9,9 @@ public class SessionUser {
     private String email;
     private String picture;
 
-    public SessionUser(User user) {
-        this.name = user.getName();
-        this.email = user.getEmail();
-        this.picture = user.getPicture();
+    public SessionUser(Users users) {
+        this.name = users.getName();
+        this.email = users.getEmail();
+        this.picture = users.getPicture();
     }
 }
